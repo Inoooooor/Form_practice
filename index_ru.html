@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <title>Form page</title>
+    </head>
+    <header id="no-header">
+        <nav id="empty_nav">
+            <header></header>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <section class="screen_content">
+                <header>
+                    <span></span><h1>Studio</h1>
+                </header>
+                <form action="URL">
+                    <div class="form_content">
+                        <h2 class="centered">Регистрация</h2>
+                        <p>Уже зарегистрированы? <a href="">Войти</a></p>
+                        <label id="email" class="centered">
+                            Почта
+                            <input required type="email">
+                        </label>
+                        <div class="names">
+                            <label>
+                                Имя
+                                <input required type="text">
+                            </label>
+                            <label>
+                                Фамилия
+                                <input required type="text">
+                            </label>
+                        </div>
+                        <label class="centered" >
+                            Пароль
+                            <input required type="password">
+                        </label>
+                        <p class="birth_p">Дата рождения</p>
+                        <div class="date_of_birth">
+                            <label>
+                                Месяц
+                                <!-- <input required type="date" name="date" id="date"> -->
+                                <select name="month" required>
+                                    <option value=""></option>
+                                    <option value="1">Январь</option>
+                                    <option value="2">Февраль</option>
+                                    <option value="3">Март</option>
+                                    <option value="4">Апрель</option>
+                                    <option value="5">Май</option>
+                                    <option value="6">Июнь</option>
+                                    <option value="7">Июль</option>
+                                    <option value="8">Август</option>
+                                    <option value="9">Сентябрь</option>
+                                    <option value="10">Октябрь</option>
+                                    <option value="11">Ноябрь</option>
+                                    <option value="12">Декабрь</option>
+                                </select>
+                            </label>
+                            <label>
+                                День
+                                <input min="1" max="31" required type="number">
+                            </label>
+                            <label>
+                                Год
+                                <input min="1900" max="2023" required type="number">
+                            </label>
+                        </div>
+                        <p>Нажимая кнопку Зарегистрироваться, Я соглашаюсь с <a href="">Условиями эксплуатации</a> и <a href="">Политикой Конфиденциальности</a></p>
+                        <div class="submit_area">
+                            <input id="submit" type="submit" value="Зарегистрироваться">
+                        </div>
+                    </div>
+                </form>
+                <aside>
+                    <p>
+                        <a href="index_ru.html">РУС</a> | <span><a href="index.html">АНГ</a></span>
+                    </p>
+                    <p>
+                        <a href="">☉</a> | <a href="">☾</a>
+                    </p>
+                </aside>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

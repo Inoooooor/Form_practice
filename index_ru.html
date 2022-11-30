@@ -26,57 +26,70 @@
                     <div class="form_content">
                         <h2 class="centered">Регистрация</h2>
                         <p>Уже зарегистрированы? <a href="">Войти</a></p>
-                        <label id="email" class="centered">
-                            Почта
-                            <input required type="email">
-                        </label>
-                        <div class="names">
-                            <label>
-                                Имя
-                                <input required type="text">
-                            </label>
-                            <label>
-                                Фамилия
-                                <input required type="text">
+                        <div class="form">
+                            <input type="text" name="text" autocomplete="off" required />
+                            <label for="text" class="label-name">
+                                <span class="content-name">
+                                    Почта
+                                </span>
                             </label>
                         </div>
-                        <label class="centered" >
-                            Пароль
-                            <input required type="password">
-                        </label>
+                        <div class="names">
+                            <div class="form">
+                                <input type="text" name="text" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                    <span class="content-name">
+                                        Имя
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form">
+                                <input type="text" name="text" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                    <span class="content-name">
+                                        Фамилия
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <input type="text" name="text" autocomplete="off" required />
+                            <label for="text" class="label-name">
+                                <span class="content-name">
+                                    Пароль
+                                </span>
+                            </label>
+                        </div>
                         <p class="birth_p">Дата рождения</p>
                         <div class="date_of_birth">
-                            <label>
-                                Месяц
-                                <!-- <input required type="date" name="date" id="date"> -->
-                                <select name="month" required>
-                                    <option value=""></option>
-                                    <option value="1">Январь</option>
-                                    <option value="2">Февраль</option>
-                                    <option value="3">Март</option>
-                                    <option value="4">Апрель</option>
-                                    <option value="5">Май</option>
-                                    <option value="6">Июнь</option>
-                                    <option value="7">Июль</option>
-                                    <option value="8">Август</option>
-                                    <option value="9">Сентябрь</option>
-                                    <option value="10">Октябрь</option>
-                                    <option value="11">Ноябрь</option>
-                                    <option value="12">Декабрь</option>
-                                </select>
-                            </label>
-                            <label>
-                                День
-                                <input min="1" max="31" required type="number">
-                            </label>
-                            <label>
-                                Год
-                                <input min="1900" max="2023" required type="number">
-                            </label>
+                            <div class="form">
+                                <input type="text" name="text" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                    <span class="content-name">
+                                        Месяц
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form">
+                                <input type="text" name="text" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                    <span class="content-name">
+                                        День
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form">
+                                <input type="text" name="text" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                    <span class="content-name">
+                                        Год
+                                    </span>
+                                </label>
+                            </div>
                         </div>
-                        <p>Нажимая кнопку Зарегистрироваться, Я соглашаюсь с <a href="">Условиями эксплуатации</a> и <a href="">Политикой Конфиденциальности</a></p>
+                        <p>Нажимая кнопку Зарегистрироваться, Я соглашаюсь с <a href="">Пользовательскими условиями</a> и <a href="">Политикой конфиденциальности</a></p>
                         <div class="submit_area">
-                            <input id="submit" type="submit" value="Зарегистрироваться">
+                            <input id="submit" type="submit" value="Create account">
                         </div>
                     </div>
                 </form>

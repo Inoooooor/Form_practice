@@ -26,53 +26,66 @@
                     <div class="form_content">
                         <h2 class="centered">Create an account</h2>
                         <p>Already have an account? <a href="">Sign in</a></p>
-                        <label id="email" class="centered">
-                            Email address
-                            <input required type="email">
-                        </label>
-                        <div class="names">
-                            <label>
-                                First name
-                                <input required type="text">
-                            </label>
-                            <label>
-                                Last name
-                                <input required type="text">
+                        <div class="form">
+                            <input type="text" name="text" autocomplete="off" required />
+                            <label for="text" class="label-name">
+                                <span class="content-name">
+                                    Email
+                                </span>
                             </label>
                         </div>
-                        <label class="centered" >
-                            Password
-                            <input required type="password">
-                        </label>
+                        <div class="names">
+                            <div class="form">
+                                <input type="text" name="text" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                    <span class="content-name">
+                                        First name
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form">
+                                <input type="text" name="text" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                    <span class="content-name">
+                                        Last name
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <input type="text" name="text" autocomplete="off" required />
+                            <label for="text" class="label-name">
+                                <span class="content-name">
+                                    Password
+                                </span>
+                            </label>
+                        </div>
                         <p class="birth_p">Date of birth</p>
                         <div class="date_of_birth">
-                            <label>
-                                Month
-                                <!-- <input required type="date" name="date" id="date"> -->
-                                <select name="month" required>
-                                    <option value=""></option>
-                                    <option value="1">January</option>
-                                    <option value="2">February</option>
-                                    <option value="3">March</option>
-                                    <option value="4">April</option>
-                                    <option value="5">May</option>
-                                    <option value="6">June</option>
-                                    <option value="7">Jule</option>
-                                    <option value="8">August</option>
-                                    <option value="9">September</option>
-                                    <option value="10">October</option>
-                                    <option value="11">November</option>
-                                    <option value="12">December</option>
-                                </select>
-                            </label>
-                            <label>
-                                Day
-                                <input min="1" max="31" required type="number">
-                            </label>
-                            <label>
-                                Year
-                                <input min="1900" max="2023" required type="number">
-                            </label>
+                            <div class="form">
+                                <input type="text" name="text" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                    <span class="content-name">
+                                        Month
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form">
+                                <input type="text" name="text" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                    <span class="content-name">
+                                        Day
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form">
+                                <input type="text" name="text" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                    <span class="content-name">
+                                        Year
+                                    </span>
+                                </label>
+                            </div>
                         </div>
                         <p>By clicking Create account, I agree that I have read and accepted the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a></p>
                         <div class="submit_area">

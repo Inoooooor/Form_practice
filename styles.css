@@ -45,7 +45,7 @@ form {
     min-height: 750px;
     grid-area: 2 / 7 / 4 / 11;
     display: grid;
-    grid-template: 1fr 90% 1fr / 1fr 80% 1fr ;
+    grid-template: 1fr 90% 1fr / 1fr 80% 1fr;
     border-radius: 10px;
     background-color: white;
 }

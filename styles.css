@@ -68,6 +68,7 @@ a {
 
 .form_content a {
 color: var(--form-anchor-color);
+transition: color 1s ease;
 }
 
 .date_of_birth {
@@ -160,6 +161,7 @@ h1::before {
     content: ' ';
     border: 8px solid var(--form-anchor-color);
     z-index: -1;
+    transition: border-color 1s ease;
 }
 
 .centered {
@@ -188,6 +190,7 @@ h1::before {
     border: none;
     border-radius: 10px;
     font-weight: 700;
+    transition: background-color 1s ease;
 }
 
 .form {

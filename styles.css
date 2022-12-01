@@ -24,6 +24,11 @@ p, label {
     color: var(--font-primary-color);
 }
 
+.terms_div span {
+    font-size: 1.1em;
+    color: var(--font-primary-color);
+}
+
 h2 {
     font-size: 2em;
 }
@@ -60,6 +65,15 @@ form {
 grid-area: 2 / 2 / 3 / 3;
 display: grid;
 grid-template: repeat(9, 1fr) / 1fr;
+}
+
+.top_p_a {
+display: flex;
+}
+
+.top_p_a a {
+    font-size: 1.1em;
+    padding-left: 0.5rem;
 }
 
 a {
@@ -111,10 +125,15 @@ aside p  {
     color: white;
 }
 
-aside p:last-of-type {
+aside p {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+aside p:first-of-type span {
+    padding-left: 5px;
+    padding-bottom: 2px;
 }
 
 aside a {

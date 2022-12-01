@@ -3,6 +3,12 @@
     --form-anchor-color: #0075ff;
 }
 
+/* Orange theme  */
+
+body .orange_theme {
+    --form-anchor-color: #FF9C00;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -98,14 +104,32 @@ aside p  {
     text-align: center;
     letter-spacing: 5px;
     font-size: 1.5em;
-    width: 80%;
+    width: 50%;
     line-height: 2em;
     font-size: 1em;
     color: white;
 }
 
+aside p:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 aside a {
     color: white;
+}
+
+aside button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    height: 100%;
+    font-size: 1.5em;
+}
+
+aside button:hover {
+    cursor: pointer;
 }
 
 .screen_content header {
@@ -134,7 +158,7 @@ h1::before {
     left: 20%;
     padding: 1.3rem;
     content: ' ';
-    border: 8px solid #0075ff;
+    border: 8px solid var(--form-anchor-color);
     z-index: -1;
 }
 
@@ -160,7 +184,7 @@ h1::before {
     max-width: 50%;
     height: 70%;
     color: white;
-    background-color: #0075ff;
+    background-color: var(--form-anchor-color);
     border: none;
     border-radius: 10px;
     font-weight: 700;
@@ -225,4 +249,3 @@ h1::before {
   .form input:valid + .label-name::after {
     transform: translateX(0%);
 }
-  

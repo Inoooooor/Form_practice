@@ -171,7 +171,7 @@ h1::before {
     position: relative;
     height: 60px;
     overflow: hidden;
-  }
+}
 
 .form input {
     width: 100%;
@@ -180,7 +180,7 @@ h1::before {
     padding-top: 20px;
     border: none;
     /* background-color: #f38181; */
-  }
+}
   .form label {
     position: absolute;
     bottom: 0px;
@@ -190,7 +190,7 @@ h1::before {
     pointer-events: none;
     border-bottom: 1px solid var(--font-primary-color);
     overflow: hidden;
-  }
+}
   .form label::after {
     content: "";
     position: absolute;
@@ -201,7 +201,7 @@ h1::before {
     border-bottom: 3px solid var(--form-anchor-color);
     transform: translateX(-100%);
     transition: all 0.3s ease;
-  }
+}
   
   .content-name {
     position: absolute;
@@ -209,20 +209,20 @@ h1::before {
     left: 0px;
     padding-bottom: 5px;
     transition: all 0.3s ease;
-  }
+}
   .form input:focus {
     outline: none;
-  }
+}
   .form input:focus + .label-name .content-name,
   .form input:valid + .label-name .content-name {
     transform: translateY(-150%);
     font-size: 14px;
     left: 0px;
     color: var(--form-anchor-color);
-  }
+}
 
   .form input:focus + .label-name::after,
   .form input:valid + .label-name::after {
     transform: translateX(0%);
-  }
+}
   

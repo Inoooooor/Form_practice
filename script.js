@@ -5,16 +5,23 @@ const engButton = document.querySelector(".en_button");
 const formDiv = document.getElementById("form_div");
 
 // Themes toggling buttons
+let isBlueTheme = 1;
 orangeThemeButton.addEventListener("click", function() {
-    document.documentElement.style.setProperty('--form-anchor-color', '#FF9C00');
-    orangeThemeButton.classList.toggle("grey_color");
-    blueThemeButton.classList.toggle("grey_color");
+    if (isBlueTheme) {
+        isBlueTheme = 0;
+        document.documentElement.style.setProperty('--form-anchor-color', '#FF9C00');
+        orangeThemeButton.classList.toggle("grey_color");
+        blueThemeButton.classList.toggle("grey_color");
+    }
 })
 
 blueThemeButton.addEventListener("click", function() {
-    document.documentElement.style.setProperty('--form-anchor-color', '#0075ff');
-    orangeThemeButton.classList.toggle("grey_color");
-    blueThemeButton.classList.toggle("grey_color");
+    if (isBlueTheme == 0) {
+        isBlueTheme = 1;
+        document.documentElement.style.setProperty('--form-anchor-color', '#0075ff');
+        orangeThemeButton.classList.toggle("grey_color");
+        blueThemeButton.classList.toggle("grey_color");
+    }
 })
 
 // Translation with ternary function

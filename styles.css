@@ -271,3 +271,7 @@ h1::before {
   .form input:valid + .label-name::after {
     transform: translateX(0%);
 }
+
+.grey_color{
+    color: var(--font-primary-color);
+}
